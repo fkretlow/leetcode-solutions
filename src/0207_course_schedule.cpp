@@ -1,5 +1,19 @@
+/*************************************************************************************************
+ *
+ * 207. Course Schedule
+ *
+ * There are a total of numCourses courses you have to take, labeled from 0 to numCourses-1.
+ * Some courses may have prerequisites, for example to take course 0 you have to first take course
+ * 1, which is expressed as a pair: [0,1]
+ * Given the total number of courses and a list of prerequisite pairs, is it possible for you to
+ * finish all courses?
+ *
+ * This is a simple check for circles in a directed graph. We perform a dfs and bail out as soon
+ * as we encounter a back edge. Otherwise we're okay.
+ *
+ ************************************************************************************************/
+
 #include <iostream>
-#include <stack>
 #include <vector>
 
 using namespace std;
@@ -19,10 +33,9 @@ public:
         // populate adjacency list
         for (const auto& e : prerequisites) adj[e[0]].push_back(e[1]);
 
+        // perform dfs to check for circles
         for (int v = 0; v < numCourses; ++v) {
-            if (state[v] == undiscovered) {
-                if (dfs(v) == false) return false;
-            }
+            if (state[v] == undiscovered && dfs(v) == false) return false;
         }
         return true;
     }
@@ -30,19 +43,14 @@ private:
     bool dfs(int v) {
         state[v] = discovered;
         for (const int& w : adj[v]) {
-            if (state[w] == discovered) {
-                // found a back edge: not a DAG
-                return false;
-            }
-            if (state[w] == undiscovered) {
-                if (dfs(w) == false) return false;
-            }
+            if (state[w] == discovered)                      return false;
+            if (state[w] == undiscovered && dfs(w) == false) return false;
         }
         state[v] = processed;
         return true;
     }
 
-    enum dfs_state : unsigned char { undiscovered, discovered, processed };
+    enum dfs_state : uint8_t { undiscovered, discovered, processed };
     vector<dfs_state> state;
     vector<vector<int>> adj;
 };
