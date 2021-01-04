@@ -14,7 +14,9 @@
  ************************************************************************************************/
 
 #include <iostream>
+#include <sstream>
 #include <vector>
+#include "tests.h"
 
 using namespace std;
 
@@ -55,46 +57,45 @@ private:
     vector<vector<int>> adj;
 };
 
+typedef std::vector<std::vector<int>> edge_list;
+
 int main(void) {
-    vector<int> N;
-    vector<vector<vector<int>>> prerequisites;
-    vector<bool> expected;
-
-    N.push_back(1);
-    prerequisites.push_back(vector<vector<int>>());
-    expected.push_back(true);
-
-    N.push_back(2);
-    prerequisites.push_back({{1,0}});
-    expected.push_back(true);
-
-    N.push_back(2);
-    prerequisites.push_back({{1,0},{0,1}});
-    expected.push_back(false);
-
-    N.push_back(4);
-    prerequisites.push_back({{0,1}, {1,2}, {2,0}, {3,4}});
-    expected.push_back(false);
-
-    N.push_back(4);
-    prerequisites.push_back({{0,1}, {1,2}, {2,3}, {3,4}});
-    expected.push_back(true);
+    vector<string> test_cases = {
+        "1\n[]\ntrue",
+        "2\n/[1,0]]\ntrue",
+        "2\n[[1,0],[0,1]]\nfalse",
+        "5\n[[0,1],[1,2],[2,0],[3,4]]\nfalse",
+        "5\n[[0,1],[1,2],[2,3],[3,4]]\ntrue",
+    };
 
     Solution instance;
-    for (size_t i = 0; i < N.size(); ++i) {
-        cout << "\nTest case " << i+1 << '\n'
-             << "N=" << N[i] << ", prerequisites=[";
-        for (const auto& e : prerequisites[i]) cout << e[0] << "->" << e[1] << ' ';
-        cout << ']' << endl;
+    int N;
+    std::shared_ptr<edge_list> prerequisites;
+    bool expected;
 
-        bool res = instance.canFinish(N[i], prerequisites[i]);
-        cout << boolalpha << res << ": ";
-        if (res != expected[i]) {
-            cout << "Error: expected " << expected[i] << endl;
+    for (size_t i = 0; i < test_cases.size(); ++i) {
+        cout << "Test case " << i+1 << endl;
+
+        try {
+            stringstream is { test_cases[i] };
+            is >> N;
+            prerequisites = parse_matrix(is);
+            expected = parse_bool(is);
+        } catch (std::runtime_error e) {
+            cerr << "failed to parse test case (" << e.what() << ')' << endl;
+            cerr << endl;
         }
-        else {
-            cout << "Ok" << endl;
-        }
+
+        cout << "N=" << N
+            << ", prerequisites=" << *prerequisites
+            << ", expected=" << boolalpha << expected
+            << flush;
+
+        bool res = instance.canFinish(N, *prerequisites);
+        cout << ", result=" << res << endl;
+        if (res != expected)    cout << "Error: expected " << expected << endl;
+        else                    cout << "Ok" << endl;
+        cout << endl;
     }
     return 0;
 }

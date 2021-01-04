@@ -1,0 +1,54 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+Node	src/0133_clone_graph.cpp	/^        Node() : val(0), neighbors({}) {};$/;"	f	class:Node
+Node	src/0133_clone_graph.cpp	/^        Node(int _val) : val(_val), neighbors({}) {};$/;"	f	class:Node
+Node	src/0133_clone_graph.cpp	/^        Node(int _val, vector<Node*> _neighbors) : val(_val), neighbors(_neighbors) {};$/;"	f	class:Node
+Node	src/0133_clone_graph.cpp	/^class Node {$/;"	c	file:
+Path	src/1436_destination_city.cpp	/^typedef pair<string, string> Path;$/;"	t	file:
+Regex	src/match.cpp	/^    Regex(std::string& p) : pattern(p) {};$/;"	f	class:Regex
+Regex	src/match.cpp	/^class Regex {$/;"	c	file:
+Solution	src/0207_course_schedule.cpp	/^class Solution {$/;"	c	file:
+Solution	src/0210_course_schedule_2.cpp	/^class Solution {$/;"	c	file:
+TestCase	src/match.cpp	/^    TestCase(std::string p, std::string s, bool exp) : re(p), string(s), expected(exp) {};$/;"	f	class:TestCase
+TestCase	src/match.cpp	/^class TestCase {$/;"	c	file:
+adj	src/0207_course_schedule.cpp	/^    vector<vector<int>> adj;$/;"	m	class:Solution	file:
+adj	src/0210_course_schedule_2.cpp	/^    vector<vector<int>> adj;$/;"	m	class:Solution	file:
+canFinish	src/0207_course_schedule.cpp	/^    bool canFinish(int numCourses, vector<vector<int>>& prerequisites)$/;"	f	class:Solution
+clone_graph	src/0133_clone_graph.cpp	/^Node* clone_graph(Node* node)$/;"	f
+destination	src/1436_destination_city.cpp	/^string destination(vector<Path> &paths)$/;"	f
+dfs	src/0207_course_schedule.cpp	/^    bool dfs(int v) {$/;"	f	class:Solution	file:
+dfs	src/0210_course_schedule_2.cpp	/^    bool dfs(int v) {$/;"	f	class:Solution	file:
+expected	src/match.cpp	/^    bool expected;$/;"	m	class:TestCase	file:
+findOrder	src/0210_course_schedule_2.cpp	/^    vector<int> findOrder(int numCourses, vector<vector<int>>& prerequisites)$/;"	f	class:Solution
+find_judge	src/0997_town_judge.cpp	/^int find_judge(int N, vector<vector<int>> trust)$/;"	f
+main	src/0207_course_schedule.cpp	/^int main(void) {$/;"	f
+main	src/0210_course_schedule_2.cpp	/^int main(void) {$/;"	f
+main	src/0310_minimum_height_trees.cpp	/^int main(void)$/;"	f
+main	src/0997_town_judge.cpp	/^int main(void)$/;"	f
+main	src/1436_destination_city.cpp	/^int main(void) {$/;"	f
+main	src/match.cpp	/^int main(int argc, char *argv[])$/;"	f
+match	src/match.cpp	/^bool Regex::match(const std::string &s)$/;"	f	class:Regex
+match_	src/match.cpp	/^bool Regex::match_(std::string::size_type pi,   \/* current index in the pattern string *\/$/;"	f	class:Regex
+mht	src/0310_minimum_height_trees.cpp	/^vector<int> mht(int n, vector<vector<int>> edges)$/;"	f
+neighbors	src/0133_clone_graph.cpp	/^        vector<Node*> neighbors;$/;"	m	class:Node	file:
+operator <<	src/0210_course_schedule_2.cpp	/^ostream& operator<<(ostream& os, vector<int> v)$/;"	f
+operator <<	src/0210_course_schedule_2.cpp	/^ostream& operator<<(ostream& os, vector<vector<int>> v)$/;"	f
+operator <<	src/match.cpp	/^std::ostream& operator<<(std::ostream& os, const Regex& re)$/;"	f
+operator <<	src/tests.cpp	/^std::ostream& operator<<(std::ostream& os, const std::vector<int>& V)$/;"	f
+operator <<	src/tests.cpp	/^std::ostream& operator<<(std::ostream& os, const std::vector<std::vector<int>>& V) {$/;"	f
+parse_bool	src/tests.cpp	/^bool parse_bool(std::istream& is)$/;"	f
+parse_matrix	src/tests.cpp	/^std::shared_ptr<std::vector<std::vector<int>>> parse_matrix(std::istream& is)$/;"	f
+parse_vector	src/tests.cpp	/^std::shared_ptr<std::vector<int>> parse_vector(std::istream& is)$/;"	f
+pattern	src/match.cpp	/^    std::string pattern;$/;"	m	class:Regex	file:
+re	src/match.cpp	/^    Regex re;$/;"	m	class:TestCase	file:
+run	src/match.cpp	/^bool TestCase::run()$/;"	f	class:TestCase
+sorted	src/0210_course_schedule_2.cpp	/^    vector<int> sorted;$/;"	m	class:Solution	file:
+state	src/0207_course_schedule.cpp	/^    vector<dfs_state> state;$/;"	m	class:Solution	file:
+state	src/0210_course_schedule_2.cpp	/^    vector<dfs_state> state;$/;"	m	class:Solution	file:
+string	src/match.cpp	/^    std::string string;$/;"	m	class:Regex	file:
+string	src/match.cpp	/^    std::string string;$/;"	m	class:TestCase	file:
+val	src/0133_clone_graph.cpp	/^        int val;$/;"	m	class:Node	file:
