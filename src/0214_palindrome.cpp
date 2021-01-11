@@ -33,7 +33,7 @@ public:
         vector<int> sum(s.size());
         stack<int> candidates;
         sum[0] = s[0];
-        candidates.push(1);
+        candidates.push(0);
 
         for (i = 1; i < s.size(); ++i) {
             sum[i] = sum[i-1] + s[i];
