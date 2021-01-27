@@ -33,7 +33,7 @@ public:
 
         for (int i = 1; i <= n; ++i) {
             candidates.push_back({ 1 });
-            for (int x = 2; x <= n; ++x) {
+            for (int x = 2; x <= N; ++x) {
                 if (x % i == 0 || i % x == 0) candidates.back().push_back(x);
             }
         }
@@ -46,11 +46,11 @@ private:
     void solve_recursively(const int i)
     {
         if (i == N) { ++count; return; }
-        for (const auto& x : candidates[i]) {
-            if (used[x] == false) {
-                used[x] = true;
+        for (const auto& x : candidates.at(i)) {
+            if (!used.at(x-1)) {
+                used.at(x-1) = true;
                 solve_recursively(i + 1);
-                used[x] = false;
+                used.at(x-1) = false;
             }
         }
     }
@@ -61,8 +61,11 @@ int main(int argc, char *argv[])
 {
     if (argc < 2) cout << "USAGE: arr <n>" << endl;
 
-    int n = stoi(argv[1]);
-    cout << Solution().count_arrangements(n) << endl;
+    Solution instance;
+    for (int i = 1; i < argc; ++i) {
+        int n = stoi(argv[i]);
+        cout << n << ": " << instance.count_arrangements(n) << endl;
+    }
 
     return 0;
 }
