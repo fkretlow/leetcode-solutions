@@ -2,8 +2,11 @@
  *
  * 15. 3-sum
  *
- * Given an array of integers, return all possible unique sub-arrays of three integers
- * where the integers sum up to 0.
+ * Given an array of integers, return all possible unique sub-arrays of three integers that sum up
+ * to 0.
+ *
+ * (My original submission was accepted, but this more elegant (and faster) one is not entirely my
+ * own, but inspired by someone else's solution.)
  *
  ************************************************************************************************/
 
@@ -58,10 +61,8 @@ ostream& operator<<(ostream& os, const vector<T>& V)
 
 int main()
 {
-    vector<vector<int>> triplets = three_sum({ -5,3,2,7,-1,-1,-1,3,4,0,-2 });
-    for (const auto& t : triplets) {
-        cout << t << endl;
-    }
+    const auto triplets = three_sum({ -5,3,2,7,-1,-1,-1,3,4,0,-2 });
+    for (const auto& t : triplets) cout << t << endl;
 
     return 0;
 }
