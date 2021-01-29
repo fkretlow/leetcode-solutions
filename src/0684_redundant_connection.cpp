@@ -1,5 +1,20 @@
+/*************************************************************************************************
+ *
+ * 684. Redundant Connection
+ *
+ * Given an undirected graph G as a list of edges E, return the edge in E whose addition to G
+ * violates the tree-property of G. In other words: Identify the circle c in G and return the edge
+ * in c that appears last in E.
+ *
+ * Simple DFS to find the circle, slightly complicated by the requirement to return the last edge
+ * in E of the circle. Faster than 65%, less memory than 17% of C++ submissions. Use of data
+ * structures could be streamlined at the cost of loss of clarity.
+ *
+ ************************************************************************************************/
+
 #include <bitset>
 #include <iostream>
+#include <set>
 #include <vector>
 
 using namespace std;
@@ -22,7 +37,7 @@ class Solution {
     vector<bool> discovered;
     vector<int> parent;
     bool finished;
-    vector<int> res;
+    set<vector<int>> circle;
 
 public:
     vector<int> redundant_connection(vector<vector<int>>& edges)
@@ -41,7 +56,12 @@ public:
         parent.insert(parent.end(), adj.size(), 0);
 
         dfs(1);
-        return res;
+
+        for (auto it = edges.rbegin(); it != edges.rend(); ++it) {
+            if (circle.find(*it) != circle.end()) return *it;
+        }
+
+        return {};
     }
 
 private:
@@ -54,8 +74,9 @@ private:
             }
             else if (discovered[v] && v != parent[u]) { // found a circle
                 finished = true;
-                if (u < v) res = {u,v};
-                else       res = {v,u};
+                for (int p = u, c = v; p != v; c = p, p = parent[p]) {
+                    circle.insert({ c < p ? c : p, c < p ? p : c });
+                }
                 return;
             }
             if (finished) return;
@@ -65,8 +86,8 @@ private:
 
 int main(void)
 {
-    // vector<vector<int>> test_case { {1,2}, {1,3}, {2,3} };
-    vector<vector<int>> test_case { {1,2}, {2,3}, {3,4}, {1,4}, {1,5} };
+    vector<vector<int>> test_case { {1,2}, {1,3}, {2,3} };
+    // vector<vector<int>> test_case { {1,2}, {2,3}, {3,4}, {1,4}, {1,5} };
 
     cout << Solution().redundant_connection(test_case) << endl;
     return 0;
