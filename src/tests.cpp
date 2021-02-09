@@ -109,3 +109,14 @@ std::ostream& operator<<(std::ostream& os, const std::vector<std::vector<int>>& 
     }
     return os << ']';
 }
+
+std::ostream& operator<<(std::ostream& os, const std::vector<std::string>& V)
+{
+    os << '[';
+    if (V.size() > 0) {
+        for (auto it = V.cbegin(); it != V.cend() - 1; ++it) os << '"' << *it << "\",";
+        os << '"' << V.back() << '"';
+    }
+    return os << ']';
+}
+
