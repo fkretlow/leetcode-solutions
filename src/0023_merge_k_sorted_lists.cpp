@@ -15,43 +15,9 @@
 #include <iostream>
 #include <vector>
 
+#include "list.h"
+
 using namespace std;
-
-struct ListNode {
-    int val;
-    ListNode *next;
-    ListNode()                      : val(0), next(nullptr) {}
-    ListNode(int x)                 : val(x), next(nullptr) {}
-    ListNode(int x, ListNode* next) : val(x), next(next)    {}
-
-    // my additions for testing
-    friend ostream& operator<<(ostream&, ListNode);
-
-    ListNode(initializer_list<int> init) {
-        auto it = init.begin();
-        val = *it++;
-        next = nullptr;
-
-        ListNode* cur = this;
-        while (it != init.end()) {
-            cur->next = new ListNode(*it++);
-            cur = cur->next;
-        }
-    }
-};
-
-ostream& operator<<(ostream& os, const ListNode* L)
-{
-    os << '[';
-    if (!L) return os << ']';
-
-    while (L->next) {
-        os << L->val << ',';
-        L = L->next;
-    }
-    return os << L->val << ']';
-}
-
 
 
 class Solution {
