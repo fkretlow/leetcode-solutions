@@ -20,6 +20,7 @@ struct ListNode {
             cur = cur->next;
         }
     }
+    void push_back(int x);
 };
 
 std::ostream& operator<<(std::ostream&, const ListNode*);
