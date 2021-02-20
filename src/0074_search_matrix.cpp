@@ -14,7 +14,7 @@
 #include <algorithm>
 #include <iostream>
 #include <vector>
-#include "tests.h"
+#include "util.h"
 
 class Solution {
     public:

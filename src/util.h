@@ -10,3 +10,6 @@ bool parse_bool(std::istream& is);
 std::ostream& operator<<(std::ostream& os, const std::vector<int>& V);
 std::ostream& operator<<(std::ostream& os, const std::vector<std::vector<int>>& V);
 std::ostream& operator<<(std::ostream& os, const std::vector<std::string>& V);
+
+template<typename T>
+void print_matrix(std::ostream&, std::vector<std::vector<T>> const&);

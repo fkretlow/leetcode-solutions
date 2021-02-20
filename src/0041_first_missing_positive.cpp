@@ -4,7 +4,7 @@
  *
  * Given an unsorted array of integers, find the smallest missing positive integer.
  *
- * The result can be at most max = |A| + 1. Traverse the array, push all integers in [0:max] onto
+ * The result can be at most max = |A| + 1. Traverse the array, push all integers in [1:max] onto
  * a priority queue, decrease max for every integer outside the range. Dequeue one by one and
  * report the first gap.
  *
@@ -16,7 +16,7 @@
 #include <iostream>
 #include <queue>
 #include <vector>
-#include "tests.h"
+#include "util.h"
 
 class Solution {
 public:
@@ -31,7 +31,7 @@ public:
         int i = 0;
         while (!Q.empty()) {
             if (Q.top() > i + 1)    break;
-            if (Q.top() == i + 1)   i = Q.top();
+            if (Q.top() == i + 1)   ++i;
             Q.pop();
         }
         return i + 1;

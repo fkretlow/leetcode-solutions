@@ -120,3 +120,11 @@ std::ostream& operator<<(std::ostream& os, const std::vector<std::string>& V)
     return os << ']';
 }
 
+template<typename T>
+void print_matrix(std::ostream& os, std::vector<std::vector<T>> const& M)
+{
+    for (const std::vector<T>& row : M) {
+        for (const T& x : row) os << x << ' ';
+        os << std::endl;
+    }
+}

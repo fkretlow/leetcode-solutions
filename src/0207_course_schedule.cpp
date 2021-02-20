@@ -16,7 +16,7 @@
 #include <iostream>
 #include <sstream>
 #include <vector>
-#include "tests.h"
+#include "util.h"
 
 using namespace std;
 
