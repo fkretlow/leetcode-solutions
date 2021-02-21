@@ -120,6 +120,15 @@ std::ostream& operator<<(std::ostream& os, const std::vector<std::string>& V)
     return os << ']';
 }
 
+std::ostream& operator<<(std::ostream& os, const std::vector<std::vector<std::string>>& V) {
+    os << '[';
+    if (V.size() > 0) {
+        for (auto it = V.cbegin(); it != V.cend() - 1; ++it) os << *it << ',';
+        os << V.back();
+    }
+    return os << ']';
+}
+
 template<typename T>
 void print_matrix(std::ostream& os, std::vector<std::vector<T>> const& M)
 {
