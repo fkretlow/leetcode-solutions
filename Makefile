@@ -9,4 +9,4 @@ clean:
 	rm -rf ./build
 
 sudoku: build
-	$(CXX) $(CXXFLAGS) -o ./build/sudoku ./src/0036_sudoku.cpp
+	$(CXX) -o ./build/sudoku ./src/0037_sudoku.cpp
