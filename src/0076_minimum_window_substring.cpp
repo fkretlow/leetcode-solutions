@@ -9,6 +9,7 @@
  ************************************************************************************************/
 
 #include <algorithm>
+#include <climits>
 #include <iostream>
 #include <map>
 #include <string>
@@ -24,43 +25,37 @@ std::ostream& operator<<(std::ostream& os, const std::map<char, short unsigned>&
 
 class Solution {
 public:
+    std::string operator()(const std::string& s, const std::string& t) { return minWindow(s, t); }
     std::string minWindow(const std::string& s, const std::string& t)
     {
-        std::map<char, short unsigned> charsFound;
+        short chars[123] { SHRT_MIN }; // `z` == 122
+        short charsCount = 0;
         for (const char& c : t) {
-            charsFound[c] = 0;
+            if (chars[c] == SHRT_MIN) chars[c] = 0;
+            ++chars[c];
+            ++charsCount;
         }
 
-        short unsigned start = 0, end = 0, len = 0, count = 0;
+        short unsigned start = 0, len = USHRT_MAX;
         for (short unsigned i = 0, j = 0; j < s.size(); ++j) {
-            if (charsFound.find(s[j]) != charsFound.end()) {
-                if (charsFound[s[j]] == 0) {
-                    ++count;
-                    if (count == charsFound.size()) {
-                        start = i;
-                        end = j+1;
-                        len = end - start;
-                    }
-                }
-                ++charsFound[s[j]];
-            }
+            if (chars[s[j]] > 0)            --charsCount;
+            if (chars[s[j]] != SHRT_MIN)   --chars[s[j]];
 
             while (i < j) {
-                if (charsFound.find(s[i]) == charsFound.end()) {
+                if (chars[s[i]] < 0) {
+                    if (chars[s[i]] != SHRT_MIN)   ++chars[s[i]];
                     ++i;
-                } else if (charsFound[s[i]] > 1) {
-                    --charsFound[s[i]];
-                    ++i;
-                } else { /* charsFound[s[i]] == 1 */
-                    if (count == charsFound.size() && j+1 - i < len) {
-                        start = i;
-                        end = j+1;
-                        len = end - start;
-                    }
+                } else {
                     break;
                 }
             }
+
+            if (charsCount == 0 && j+1 - i < len) {
+                start = i;
+                len = j+1 - i;
+            }
         }
+        if (len == USHRT_MAX) len = 0;
         return s.substr(start, len);
     }
 };
@@ -75,8 +70,15 @@ void test(const std::string s, const std::string t)
 
 int main(int argc, char* argv[])
 {
-    if (argc >= 3) {
-        test(argv[1], argv[2]);
+    if (argc >= 1 && std::string("-i") == argv[1]) {
+        Solution minWindow;
+        for ( ;; ) {
+            std::string s, t;
+            std::cin >> s;
+            std::cin >> t;
+            std::cout << "-> " << minWindow(s, t) << std::endl << std::endl;
+        }
+
     } else {
         test("ADOBECODEBANC", "ABC");
         test("A", "A");
