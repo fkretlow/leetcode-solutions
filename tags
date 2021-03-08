@@ -4,51 +4,375 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+CXXFLAGS	Makefile	/^CXXFLAGS = -std=c++17 -O2 -Wall -Werror -fPIC #-fsanitize=address$/;"	m
+Cell	src/0037_sudoku.cpp	/^    struct Cell { int row, col; };$/;"	s	class:Solution	file:
+DELETE	src/0072_edit_distance.cpp	/^    enum { MATCH=0, DELETE=1, INSERT=2 };$/;"	e	enum:Solution::__anon1	file:
+Edge	src/0208_trie.cpp	/^    struct Edge {$/;"	s	class:Trie	file:
+FrequencyNode	src/0460_lfu_cache.cpp	/^    struct FrequencyNode {$/;"	s	class:LFUCache	file:
+G	src/0399_divisions.cpp	/^    unordered_map<string, forward_list<pair<string, double>>> G;$/;"	m	class:Solution	file:
+Graph	src/0332_itinerary.cpp	/^    typedef unordered_map<string, priority_queue<string, vector<string>, greater<string>>> Graph;$/;"	t	class:Solution	file:
+INSERT	src/0072_edit_distance.cpp	/^    enum { MATCH=0, DELETE=1, INSERT=2 };$/;"	e	enum:Solution::__anon1	file:
+LFUCache	src/0460_lfu_cache.cpp	/^    LFUCache(int capacity_) : capacity(capacity_) {}$/;"	f	class:LFUCache
+LFUCache	src/0460_lfu_cache.cpp	/^class LFUCache {$/;"	c	file:
+LRUCache	src/0146_lru_cache.cpp	/^LRUCache::LRUCache(int capacity_)$/;"	f	class:LRUCache
+LRUCache	src/0146_lru_cache.cpp	/^class LRUCache {$/;"	c	file:
+ListNode	src/0002_add_two_numbers.cpp	/^    ListNode()                      : val(0), next(nullptr) {}$/;"	f	struct:ListNode
+ListNode	src/0002_add_two_numbers.cpp	/^    ListNode(initializer_list<int> init) {$/;"	f	struct:ListNode
+ListNode	src/0002_add_two_numbers.cpp	/^    ListNode(int x)                 : val(x), next(nullptr) {}$/;"	f	struct:ListNode
+ListNode	src/0002_add_two_numbers.cpp	/^    ListNode(int x, ListNode *next) : val(x), next(next)    {}$/;"	f	struct:ListNode
+ListNode	src/0002_add_two_numbers.cpp	/^struct ListNode {$/;"	s	file:
+ListNode	src/list.h	/^    ListNode()                      : val(0), next(nullptr) {}$/;"	f	struct:ListNode
+ListNode	src/list.h	/^    ListNode(int x)                 : val(x), next(nullptr) {}$/;"	f	struct:ListNode
+ListNode	src/list.h	/^    ListNode(int x, ListNode* next) : val(x), next(next)    {}$/;"	f	struct:ListNode
+ListNode	src/list.h	/^    ListNode(std::initializer_list<int> init) {$/;"	f	struct:ListNode
+ListNode	src/list.h	/^struct ListNode {$/;"	s
+ListSize	src/0019_remove_node.cpp	/^    unsigned short ListSize(const ListNode* n)$/;"	f	class:Solution	file:
+M	src/0174_dungeon_game.cpp	/^    const std::vector<std::vector<int>> *M;$/;"	m	class:Solution	file:
+MATCH	src/0072_edit_distance.cpp	/^    enum { MATCH=0, DELETE=1, INSERT=2 };$/;"	e	enum:Solution::__anon1	file:
+MagicDictionary	src/0676_magic_dictionary.cpp	/^    MagicDictionary(const vector<string>& dictionary) { buildDict(dictionary); }$/;"	f	class:MagicDictionary
+MagicDictionary	src/0676_magic_dictionary.cpp	/^class MagicDictionary {$/;"	c	file:
+N	src/0526_beautiful_arrangement.cpp	/^    int N;$/;"	m	class:Solution	file:
 Node	src/0133_clone_graph.cpp	/^        Node() : val(0), neighbors({}) {};$/;"	f	class:Node
 Node	src/0133_clone_graph.cpp	/^        Node(int _val) : val(_val), neighbors({}) {};$/;"	f	class:Node
 Node	src/0133_clone_graph.cpp	/^        Node(int _val, vector<Node*> _neighbors) : val(_val), neighbors(_neighbors) {};$/;"	f	class:Node
 Node	src/0133_clone_graph.cpp	/^class Node {$/;"	c	file:
+PascalTriangle	src/0062_unique_paths.cpp	/^class PascalTriangle {$/;"	c	file:
 Path	src/1436_destination_city.cpp	/^typedef pair<string, string> Path;$/;"	t	file:
-Regex	src/match.cpp	/^    Regex(std::string& p) : pattern(p) {};$/;"	f	class:Regex
-Regex	src/match.cpp	/^class Regex {$/;"	c	file:
+Permutator	src/0046_permutations.cpp	/^class Permutator {$/;"	c	file:
+Regex	src/0010_regex.cpp	/^    Regex(const std::string& p) : pattern(p) {};$/;"	f	class:Regex
+Regex	src/0010_regex.cpp	/^class Regex {$/;"	c	file:
+Solution	src/0002_add_two_numbers.cpp	/^class Solution {$/;"	c	file:
+Solution	src/0003_longest_substring.cpp	/^class Solution {$/;"	c	file:
+Solution	src/0005_palindrome.cpp	/^class Solution {$/;"	c	file:
+Solution	src/0008_stoi.cpp	/^class Solution {$/;"	c	file:
+Solution	src/0011_container_with_most_water.cpp	/^class Solution {$/;"	c	file:
+Solution	src/0017_letter_combinations.cpp	/^class Solution {$/;"	c	file:
+Solution	src/0019_remove_node.cpp	/^class Solution {$/;"	c	file:
+Solution	src/0020_valid_parentheses.cpp	/^class Solution {$/;"	c	file:
+Solution	src/0022_generate_parentheses.cpp	/^class Solution {$/;"	c	file:
+Solution	src/0023_merge_k_sorted_lists.cpp	/^class Solution {$/;"	c	file:
+Solution	src/0024_swap_nodes.cpp	/^class Solution {$/;"	c	file:
+Solution	src/0025_reverse_nodes_in_group.cpp	/^class Solution {$/;"	c	file:
+Solution	src/0033_search_rotated_array.cpp	/^class Solution {$/;"	c	file:
+Solution	src/0034_range_in_sorted_array.cpp	/^class Solution$/;"	c	file:
+Solution	src/0036_validate_sudoku.cpp	/^class Solution {$/;"	c	file:
+Solution	src/0037_sudoku.cpp	/^class Solution {$/;"	c	file:
+Solution	src/0039_combination_sum.cpp	/^class Solution {$/;"	c	file:
+Solution	src/0041_first_missing_positive.cpp	/^class Solution {$/;"	c	file:
+Solution	src/0048_rotate_image.cpp	/^class Solution {$/;"	c	file:
+Solution	src/0049_group_anagrams.cpp	/^class Solution {$/;"	c	file:
+Solution	src/0056_merge_intervals.cpp	/^class Solution {$/;"	c	file:
+Solution	src/0062_unique_paths.cpp	/^class Solution {$/;"	c	file:
+Solution	src/0064_minimum_path_sum.cpp	/^class Solution {$/;"	c	file:
+Solution	src/0072_edit_distance.cpp	/^class Solution {$/;"	c	file:
+Solution	src/0074_search_matrix.cpp	/^class Solution {$/;"	c	file:
+Solution	src/0075_sort_colors.cpp	/^class Solution {$/;"	c	file:
+Solution	src/0076_minimum_window_substring.cpp	/^class Solution {$/;"	c	file:
+Solution	src/0078_subsets.cpp	/^class Solution {$/;"	c	file:
+Solution	src/0079_word_search.cpp	/^class Solution {$/;"	c	file:
+Solution	src/0090_subsets.cpp	/^class Solution {$/;"	c	file:
+Solution	src/0098_validate_bst.cpp	/^class Solution {$/;"	c	file:
+Solution	src/0114_flatten_tree.cpp	/^class Solution {$/;"	c	file:
+Solution	src/0174_dungeon_game.cpp	/^class Solution {$/;"	c	file:
 Solution	src/0207_course_schedule.cpp	/^class Solution {$/;"	c	file:
 Solution	src/0210_course_schedule_2.cpp	/^class Solution {$/;"	c	file:
-TestCase	src/match.cpp	/^    TestCase(std::string p, std::string s, bool exp) : re(p), string(s), expected(exp) {};$/;"	f	class:TestCase
-TestCase	src/match.cpp	/^class TestCase {$/;"	c	file:
+Solution	src/0214_palindrome.cpp	/^class Solution {$/;"	c	file:
+Solution	src/0332_itinerary.cpp	/^class Solution {$/;"	c	file:
+Solution	src/0399_divisions.cpp	/^class Solution {$/;"	c	file:
+Solution	src/0501_bst_mode.cpp	/^class Solution {$/;"	c	file:
+Solution	src/0526_beautiful_arrangement.cpp	/^class Solution {$/;"	c	file:
+Solution	src/0667_beautiful_arrangement_2.cpp	/^class Solution {$/;"	c	file:
+Solution	src/0684_redundant_connection.cpp	/^class Solution {$/;"	c	file:
+Sudoku	src/0036_validate_sudoku.cpp	/^typedef std::vector<std::vector<char>> Sudoku;$/;"	t	file:
+TestCase	src/0010_regex.cpp	/^    TestCase(std::string p, std::string s, bool exp) : re(p), str(s), expected(exp) {};$/;"	f	class:TestCase
+TestCase	src/0010_regex.cpp	/^class TestCase {$/;"	c	file:
+TreeNode	src/tree.h	/^    TreeNode()                                : val(0), left(nullptr), right(nullptr) {}$/;"	f	struct:TreeNode
+TreeNode	src/tree.h	/^    TreeNode(int x)                           : val(x), left(nullptr), right(nullptr) {}$/;"	f	struct:TreeNode
+TreeNode	src/tree.h	/^    TreeNode(int x, TreeNode* l, TreeNode* r) : val(x), left(l),       right(r)       {}$/;"	f	struct:TreeNode
+TreeNode	src/tree.h	/^struct TreeNode {$/;"	s
+Trie	src/0208_trie.cpp	/^    Trie() { graph.push_back({ false, {} }); }$/;"	f	class:Trie
+Trie	src/0208_trie.cpp	/^class Trie {$/;"	c	file:
+Value	src/0146_lru_cache.cpp	/^    struct Value {$/;"	s	class:LRUCache	file:
+Value	src/0460_lfu_cache.cpp	/^    struct Value {$/;"	s	class:LFUCache	file:
+Vertex	src/0208_trie.cpp	/^    struct Vertex {$/;"	s	class:Trie	file:
+addTwoNumbers	src/0002_add_two_numbers.cpp	/^    ListNode* addTwoNumbers(ListNode* l1, ListNode* l2)$/;"	f	class:Solution
 adj	src/0207_course_schedule.cpp	/^    vector<vector<int>> adj;$/;"	m	class:Solution	file:
 adj	src/0210_course_schedule_2.cpp	/^    vector<vector<int>> adj;$/;"	m	class:Solution	file:
+adj	src/0684_redundant_connection.cpp	/^    vector<vector<int>> adj;$/;"	m	class:Solution	file:
+adjacent	src/0208_trie.cpp	/^        vector<Edge> adjacent;$/;"	m	struct:Trie::Vertex	file:
+bfs	src/0399_divisions.cpp	/^    double bfs(const string& from, const string& to) {$/;"	f	class:Solution	file:
+board	src/0079_word_search.cpp	/^    const std::vector<std::vector<char>>* board;$/;"	m	class:Solution	file:
+buildDict	src/0676_magic_dictionary.cpp	/^void MagicDictionary::buildDict(const vector<string>& dictionary)$/;"	f	class:MagicDictionary
+cache	src/0146_lru_cache.cpp	/^    unordered_map<int, Value> cache;$/;"	m	class:LRUCache	file:
+cache	src/0460_lfu_cache.cpp	/^    map<int, Value> cache;$/;"	m	class:LFUCache	file:
+calcEquation	src/0399_divisions.cpp	/^    vector<double> calcEquation(vector<vector<string>>& equations,$/;"	f	class:Solution
+calculate	src/0174_dungeon_game.cpp	/^    int calculate(const unsigned i, const unsigned j)$/;"	f	class:Solution	file:
+calculateMinimumHP	src/0174_dungeon_game.cpp	/^    int calculateMinimumHP(std::vector<std::vector<int>> const& dungeon)$/;"	f	class:Solution
 canFinish	src/0207_course_schedule.cpp	/^    bool canFinish(int numCourses, vector<vector<int>>& prerequisites)$/;"	f	class:Solution
+candidates	src/0526_beautiful_arrangement.cpp	/^    vector<vector<int>> candidates;$/;"	m	class:Solution	file:
+capacity	src/0146_lru_cache.cpp	/^    size_t capacity;$/;"	m	class:LRUCache	file:
+capacity	src/0460_lfu_cache.cpp	/^    size_t capacity;$/;"	m	class:LFUCache	file:
+check	src/0022_generate_parentheses.cpp	/^    bool check(const string& result)$/;"	f	class:Solution	file:
+circle	src/0684_redundant_connection.cpp	/^    set<vector<int>> circle;$/;"	m	class:Solution	file:
 clone_graph	src/0133_clone_graph.cpp	/^Node* clone_graph(Node* node)$/;"	f
+col	src/0037_sudoku.cpp	/^    struct Cell { int row, col; };$/;"	m	struct:Solution::Cell	file:
+combinationSum	src/0039_combination_sum.cpp	/^    std::vector<std::vector<int>> combinationSum(const std::vector<int> V, const int x)$/;"	f	class:Solution
+compareLists	src/0023_merge_k_sorted_lists.cpp	/^    static bool compareLists(const ListNode* const a, const ListNode* const b)$/;"	f	class:Solution	file:
+compareStringSize	src/0676_magic_dictionary.cpp	/^    static bool compareStringSize(const string& a, const string& b) { return a.size() < b.size(); }$/;"	f	class:MagicDictionary	file:
+computeCandidates	src/0037_sudoku.cpp	/^    computeCandidates(const std::vector<std::vector<char>>& board, const Cell& next)$/;"	f	class:Solution	file:
+constructArray	src/0667_beautiful_arrangement_2.cpp	/^    vector<int> constructArray(const int n, const int k) const$/;"	f	class:Solution
+count	src/0526_beautiful_arrangement.cpp	/^    int count;$/;"	m	class:Solution	file:
+count__r	src/0501_bst_mode.cpp	/^    void count__r(TreeNode* n)$/;"	f	class:Solution	file:
+count_arrangements	src/0526_beautiful_arrangement.cpp	/^    int count_arrangements(const int n)$/;"	f	class:Solution
+counter	src/0501_bst_mode.cpp	/^    std::map<int, int> counter;$/;"	m	class:Solution	file:
+cur	src/0039_combination_sum.cpp	/^    std::vector<int> cur;$/;"	m	class:Solution	file:
+current	src/0046_permutations.cpp	/^    std::vector<T> current;$/;"	m	class:Permutator	file:
+data	src/0676_magic_dictionary.cpp	/^    vector<string> data;$/;"	m	class:MagicDictionary	file:
 destination	src/1436_destination_city.cpp	/^string destination(vector<Path> &paths)$/;"	f
 dfs	src/0207_course_schedule.cpp	/^    bool dfs(int v) {$/;"	f	class:Solution	file:
 dfs	src/0210_course_schedule_2.cpp	/^    bool dfs(int v) {$/;"	f	class:Solution	file:
-expected	src/match.cpp	/^    bool expected;$/;"	m	class:TestCase	file:
+dfs	src/0332_itinerary.cpp	/^    void dfs(Graph& G, const string& from, stack<string>& res)$/;"	f	class:Solution	file:
+dfs	src/0684_redundant_connection.cpp	/^    void dfs(const int u) {$/;"	f	class:Solution	file:
+digits	src/0017_letter_combinations.cpp	/^    string digits;$/;"	m	class:Solution	file:
+discovered	src/0684_redundant_connection.cpp	/^    vector<bool> discovered;$/;"	m	class:Solution	file:
+dp	src/0174_dungeon_game.cpp	/^    std::vector<std::vector<int>> dp;$/;"	m	class:Solution	file:
+drop_lfu	src/0460_lfu_cache.cpp	/^    void drop_lfu(void) {$/;"	f	class:LFUCache	file:
+edge_list	src/0207_course_schedule.cpp	/^typedef std::vector<std::vector<int>> edge_list;$/;"	t	file:
+end	src/0208_trie.cpp	/^        bool end;$/;"	m	struct:Trie::Vertex	file:
+exist	src/0079_word_search.cpp	/^    bool exist(const std::vector<std::vector<char>>& _board, const std::string& _word)$/;"	f	class:Solution
+expected	src/0010_regex.cpp	/^    bool expected;$/;"	m	class:TestCase	file:
+findItinerary	src/0332_itinerary.cpp	/^    vector<string> findItinerary(vector<vector<string>>& tickets)$/;"	f	class:Solution
+findMode	src/0501_bst_mode.cpp	/^    std::vector<int> findMode(TreeNode* root)$/;"	f	class:Solution
 findOrder	src/0210_course_schedule_2.cpp	/^    vector<int> findOrder(int numCourses, vector<vector<int>>& prerequisites)$/;"	f	class:Solution
+findPivot	src/0033_search_rotated_array.cpp	/^    int findPivot(const std::vector<int>& A) const$/;"	f	class:Solution	file:
 find_judge	src/0997_town_judge.cpp	/^int find_judge(int N, vector<vector<int>> trust)$/;"	f
+find_median	src/0004_median.cpp	/^double find_median(const std::vector<int>& V)$/;"	f
+find_median	src/0004_median.cpp	/^double find_median(const std::vector<int>& V1, const std::vector<int>& V2)$/;"	f
+find_median_of_successive_arrays	src/0004_median.cpp	/^double find_median_of_successive_arrays(const std::vector<int>& low,$/;"	f
+finished	src/0684_redundant_connection.cpp	/^    bool finished;$/;"	m	class:Solution	file:
+firstMissingPositive	src/0041_first_missing_positive.cpp	/^    int firstMissingPositive(const std::vector<int> &A)$/;"	f	class:Solution
+flatten	src/0114_flatten_tree.cpp	/^    void flatten(TreeNode* root)$/;"	f	class:Solution
+freeCells	src/0037_sudoku.cpp	/^    int freeCells = 0;$/;"	m	class:Solution	file:
+frequency	src/0460_lfu_cache.cpp	/^        int frequency;$/;"	m	struct:LFUCache::FrequencyNode	file:
+fromList	src/tree.cpp	/^TreeNode* TreeNode::fromList(const std::string& s)$/;"	f	class:TreeNode
+generateParenthesis	src/0022_generate_parentheses.cpp	/^    vector<string> generateParenthesis(const unsigned short n)$/;"	f	class:Solution
+get	src/0062_unique_paths.cpp	/^    unsigned get(const unsigned n, const unsigned k)$/;"	f	class:PascalTriangle
+get	src/0146_lru_cache.cpp	/^int LRUCache::get(int key)$/;"	f	class:LRUCache
+get	src/0460_lfu_cache.cpp	/^    int get(int key) {$/;"	f	class:LFUCache
+get_index	src/0062_unique_paths.cpp	/^    unsigned get_index(const unsigned n, const unsigned k)$/;"	f	class:PascalTriangle	file:
+graph	src/0208_trie.cpp	/^    vector<Vertex> graph;$/;"	m	class:Trie	file:
+grow	src/0062_unique_paths.cpp	/^    void grow(const unsigned to_n)$/;"	f	class:PascalTriangle	file:
+history	src/0146_lru_cache.cpp	/^    list<int> history;$/;"	m	class:LRUCache	file:
+history	src/0460_lfu_cache.cpp	/^    set<FrequencyNode> history;$/;"	m	class:LFUCache	file:
+insert	src/0208_trie.cpp	/^void Trie::insert(string word)$/;"	f	class:Trie
+isValid	src/0020_valid_parentheses.cpp	/^    bool isValid(const string& s) const$/;"	f	class:Solution
+isValidBST	src/0098_validate_bst.cpp	/^    bool isValidBST(TreeNode* root) {$/;"	f	class:Solution
+isValidSudoku	src/0036_validate_sudoku.cpp	/^    bool isValidSudoku(Sudoku const& board) const$/;"	f	class:Solution
+k_max_size	src/0046_permutations.cpp	/^constexpr unsigned short k_max_size = 6;$/;"	v
+key	src/0460_lfu_cache.cpp	/^        int key;$/;"	m	struct:LFUCache::FrequencyNode	file:
+label	src/0208_trie.cpp	/^        char label;$/;"	m	struct:Trie::Edge	file:
+last_access	src/0460_lfu_cache.cpp	/^        clock_t last_access;$/;"	m	struct:LFUCache::FrequencyNode	file:
+left	src/tree.h	/^    TreeNode* left;$/;"	m	struct:TreeNode
+lengthOfLongestSubstring	src/0003_longest_substring.cpp	/^    int lengthOfLongestSubstring(string s)$/;"	f	class:Solution
+letterCombinations	src/0017_letter_combinations.cpp	/^    vector<string> letterCombinations(const string& digits_)$/;"	f	class:Solution
+letters	src/0017_letter_combinations.cpp	/^    static vector<string> letters;$/;"	m	class:Solution	file:
+log	src/0024_swap_nodes.cpp	/^void log(const std::string& fmt, const Args& ... args)$/;"	f
+log	src/0025_reverse_nodes_in_group.cpp	/^void log(const std::string& fmt, const Args& ... args)$/;"	f
+log	src/0033_search_rotated_array.cpp	/^void log(const std::string& fmt, const Args& ... args)$/;"	f
+log	src/0075_sort_colors.cpp	/^void log(const std::string& fmt, const Args& ... args)$/;"	f
+longestPalindrome	src/0005_palindrome.cpp	/^    string longestPalindrome(string s)$/;"	f	class:Solution
+m	src/0079_word_search.cpp	/^    int m, n;$/;"	m	class:Solution	file:
+m	src/0174_dungeon_game.cpp	/^    unsigned m, n;$/;"	m	class:Solution	file:
+m_data	src/0062_unique_paths.cpp	/^    std::vector<unsigned> m_data = { 1 };$/;"	m	class:PascalTriangle	file:
+m_max	src/0062_unique_paths.cpp	/^    unsigned m_max = 0;$/;"	m	class:PascalTriangle	file:
+m_trg	src/0062_unique_paths.cpp	/^    static PascalTriangle m_trg;$/;"	m	class:Solution	file:
+m_trg	src/0062_unique_paths.cpp	/^PascalTriangle Solution::m_trg;$/;"	m	class:Solution	file:
+main	src/0001_twosum.cpp	/^int main(void)$/;"	f
+main	src/0002_add_two_numbers.cpp	/^int main(void)$/;"	f
+main	src/0003_longest_substring.cpp	/^int main(int argc, char *argv[])$/;"	f
+main	src/0004_median.cpp	/^int main()$/;"	f
+main	src/0005_palindrome.cpp	/^int main()$/;"	f
+main	src/0008_stoi.cpp	/^int main(int argc, char *argv[])$/;"	f
+main	src/0010_regex.cpp	/^int main(int argc, char *argv[])$/;"	f
+main	src/0011_container_with_most_water.cpp	/^int main(void)$/;"	f
+main	src/0015_3sum.cpp	/^int main()$/;"	f
+main	src/0017_letter_combinations.cpp	/^int main(void)$/;"	f
+main	src/0019_remove_node.cpp	/^int main(void)$/;"	f
+main	src/0020_valid_parentheses.cpp	/^int main(void)$/;"	f
+main	src/0022_generate_parentheses.cpp	/^int main(void)$/;"	f
+main	src/0023_merge_k_sorted_lists.cpp	/^int main(void)$/;"	f
+main	src/0024_swap_nodes.cpp	/^int main(void)$/;"	f
+main	src/0025_reverse_nodes_in_group.cpp	/^int main(int argc, char** argv)$/;"	f
+main	src/0033_search_rotated_array.cpp	/^int main(void)$/;"	f
+main	src/0034_range_in_sorted_array.cpp	/^int main(void)$/;"	f
+main	src/0036_validate_sudoku.cpp	/^int main()$/;"	f
+main	src/0037_sudoku.cpp	/^int main()$/;"	f
+main	src/0039_combination_sum.cpp	/^int main(void)$/;"	f
+main	src/0041_first_missing_positive.cpp	/^int main(void)$/;"	f
+main	src/0046_permutations.cpp	/^int main()$/;"	f
+main	src/0048_rotate_image.cpp	/^int main()$/;"	f
+main	src/0049_group_anagrams.cpp	/^int main()$/;"	f
+main	src/0056_merge_intervals.cpp	/^int main()$/;"	f
+main	src/0062_unique_paths.cpp	/^int main()$/;"	f
+main	src/0064_minimum_path_sum.cpp	/^int main()$/;"	f
+main	src/0072_edit_distance.cpp	/^int main(int argc, char* argv[])$/;"	f
+main	src/0074_search_matrix.cpp	/^int main(void)$/;"	f
+main	src/0075_sort_colors.cpp	/^int main()$/;"	f
+main	src/0076_minimum_window_substring.cpp	/^int main(int argc, char* argv[])$/;"	f
+main	src/0078_subsets.cpp	/^int main()$/;"	f
+main	src/0079_word_search.cpp	/^int main(int argc, char **argv)$/;"	f
+main	src/0090_subsets.cpp	/^int main()$/;"	f
+main	src/0114_flatten_tree.cpp	/^int main()$/;"	f
+main	src/0146_lru_cache.cpp	/^int main(void)$/;"	f
+main	src/0174_dungeon_game.cpp	/^int main()$/;"	f
 main	src/0207_course_schedule.cpp	/^int main(void) {$/;"	f
+main	src/0208_trie.cpp	/^int main(void)$/;"	f
 main	src/0210_course_schedule_2.cpp	/^int main(void) {$/;"	f
+main	src/0214_palindrome.cpp	/^int main()$/;"	f
 main	src/0310_minimum_height_trees.cpp	/^int main(void)$/;"	f
+main	src/0332_itinerary.cpp	/^int main(void)$/;"	f
+main	src/0399_divisions.cpp	/^int main(void)$/;"	f
+main	src/0460_lfu_cache.cpp	/^int main(void)$/;"	f
+main	src/0501_bst_mode.cpp	/^int main()$/;"	f
+main	src/0526_beautiful_arrangement.cpp	/^int main(int argc, char *argv[])$/;"	f
+main	src/0667_beautiful_arrangement_2.cpp	/^int main(int argc, char *argv[])$/;"	f
+main	src/0676_magic_dictionary.cpp	/^int main(void)$/;"	f
+main	src/0684_redundant_connection.cpp	/^int main(void)$/;"	f
 main	src/0997_town_judge.cpp	/^int main(void)$/;"	f
 main	src/1436_destination_city.cpp	/^int main(void) {$/;"	f
-main	src/match.cpp	/^int main(int argc, char *argv[])$/;"	f
-match	src/match.cpp	/^bool Regex::match(const std::string &s)$/;"	f	class:Regex
-match_	src/match.cpp	/^bool Regex::match_(std::string::size_type pi,   \/* current index in the pattern string *\/$/;"	f	class:Regex
+main	src/1679_k_sum_pairs.cpp	/^int main()$/;"	f
+match	src/0010_regex.cpp	/^    bool match(const std::string &s) { str = s; return match_(0, 0); }$/;"	f	class:Regex
+match_	src/0010_regex.cpp	/^bool Regex::match_(const std::string::size_type pi,   \/* current index in the pattern string *\/$/;"	f	class:Regex
+matrix	src/0048_rotate_image.cpp	/^typedef std::vector<std::vector<int>> matrix;$/;"	t	file:
+maxArea	src/0011_container_with_most_water.cpp	/^    int maxArea(vector<int> height) {$/;"	f	class:Solution
+maxCount	src/0501_bst_mode.cpp	/^    int maxCount = 0;$/;"	m	class:Solution	file:
+max_operations	src/1679_k_sum_pairs.cpp	/^int max_operations(vector<int>& nums, int k)$/;"	f
+merge	src/0056_merge_intervals.cpp	/^    std::vector<std::vector<int>> merge(std::vector<std::vector<int>> const& intervals) const$/;"	f	class:Solution
+mergeKLists	src/0023_merge_k_sorted_lists.cpp	/^    ListNode* mergeKLists(vector<ListNode*>& lists) const$/;"	f	class:Solution
 mht	src/0310_minimum_height_trees.cpp	/^vector<int> mht(int n, vector<vector<int>> edges)$/;"	f
+min	src/0072_edit_distance.cpp	/^    int min(const int* A, size_t n) const$/;"	f	class:Solution	file:
+minDistance	src/0072_edit_distance.cpp	/^    int minDistance(std::string const& from, std::string const& to) const$/;"	f	class:Solution
+minPathSum	src/0064_minimum_path_sum.cpp	/^    int minPathSum(std::vector<std::vector<int>> const& M) const$/;"	f	class:Solution
+minWindow	src/0076_minimum_window_substring.cpp	/^    std::string minWindow(const std::string& s, const std::string& t)$/;"	f	class:Solution
+myAtoi	src/0008_stoi.cpp	/^    int myAtoi(string s)$/;"	f	class:Solution
+n	src/0079_word_search.cpp	/^    int m, n;$/;"	m	class:Solution	file:
+n	src/0174_dungeon_game.cpp	/^    unsigned m, n;$/;"	m	class:Solution	file:
 neighbors	src/0133_clone_graph.cpp	/^        vector<Node*> neighbors;$/;"	m	class:Node	file:
+next	src/0002_add_two_numbers.cpp	/^    ListNode* next;$/;"	m	struct:ListNode	file:
+next	src/list.h	/^    ListNode *next;$/;"	m	struct:ListNode
+nextCell	src/0037_sudoku.cpp	/^    Cell nextCell(const std::vector<std::vector<char>>& board)$/;"	f	class:Solution	file:
+node	src/0146_lru_cache.cpp	/^        list<int>::iterator node;$/;"	m	struct:LRUCache::Value	file:
+node	src/0460_lfu_cache.cpp	/^        set<FrequencyNode>::iterator node;$/;"	m	struct:LFUCache::Value	file:
+operator ()	src/0036_validate_sudoku.cpp	/^    bool operator()(Sudoku const& board) const { return isValidSudoku(board); }$/;"	f	class:Solution
+operator ()	src/0076_minimum_window_substring.cpp	/^    std::string operator()(const std::string& s, const std::string& t) { return minWindow(s, t); }$/;"	f	class:Solution
+operator ()	src/0078_subsets.cpp	/^    std::vector<std::vector<int>> operator()(const std::vector<int>& V)$/;"	f	class:Solution
+operator ()	src/0090_subsets.cpp	/^    std::vector<std::vector<int>> operator()(const std::vector<int>& V)$/;"	f	class:Solution
+operator <	src/0460_lfu_cache.cpp	/^        bool operator<(const FrequencyNode other) const {$/;"	f	struct:LFUCache::FrequencyNode
+operator <<	src/0001_twosum.cpp	/^ostream& operator<<(ostream& os, const vector<T>& V)$/;"	f
+operator <<	src/0002_add_two_numbers.cpp	/^ostream& operator<<(ostream& os, ListNode L)$/;"	f
+operator <<	src/0010_regex.cpp	/^std::ostream& operator<<(std::ostream& os, const Regex& re)$/;"	f
+operator <<	src/0015_3sum.cpp	/^ostream& operator<<(ostream& os, const vector<T>& V)$/;"	f
+operator <<	src/0037_sudoku.cpp	/^std::ostream& operator<<(std::ostream& os, const std::vector<char>& V)$/;"	f
+operator <<	src/0076_minimum_window_substring.cpp	/^std::ostream& operator<<(std::ostream& os, const std::map<char, short unsigned>& M)$/;"	f
+operator <<	src/0146_lru_cache.cpp	/^ostream& operator<<(ostream &os, const LRUCache &cache)$/;"	f
 operator <<	src/0210_course_schedule_2.cpp	/^ostream& operator<<(ostream& os, vector<int> v)$/;"	f
 operator <<	src/0210_course_schedule_2.cpp	/^ostream& operator<<(ostream& os, vector<vector<int>> v)$/;"	f
-operator <<	src/match.cpp	/^std::ostream& operator<<(std::ostream& os, const Regex& re)$/;"	f
-operator <<	src/tests.cpp	/^std::ostream& operator<<(std::ostream& os, const std::vector<int>& V)$/;"	f
-operator <<	src/tests.cpp	/^std::ostream& operator<<(std::ostream& os, const std::vector<std::vector<int>>& V) {$/;"	f
-parse_bool	src/tests.cpp	/^bool parse_bool(std::istream& is)$/;"	f
-parse_matrix	src/tests.cpp	/^std::shared_ptr<std::vector<std::vector<int>>> parse_matrix(std::istream& is)$/;"	f
-parse_vector	src/tests.cpp	/^std::shared_ptr<std::vector<int>> parse_vector(std::istream& is)$/;"	f
-pattern	src/match.cpp	/^    std::string pattern;$/;"	m	class:Regex	file:
-re	src/match.cpp	/^    Regex re;$/;"	m	class:TestCase	file:
-run	src/match.cpp	/^bool TestCase::run()$/;"	f	class:TestCase
+operator <<	src/0460_lfu_cache.cpp	/^ostream& operator<<(ostream &os, const LFUCache &cache)$/;"	f
+operator <<	src/0684_redundant_connection.cpp	/^ostream& operator<<(ostream& os, const vector<T>& V)$/;"	f
+operator <<	src/list.cpp	/^std::ostream& operator<<(std::ostream& os, const ListNode* L)$/;"	f
+operator <<	src/util.cpp	/^std::ostream& operator<<(std::ostream& os, const std::vector<int>& V)$/;"	f
+operator <<	src/util.cpp	/^std::ostream& operator<<(std::ostream& os, const std::vector<std::string>& V)$/;"	f
+operator <<	src/util.cpp	/^std::ostream& operator<<(std::ostream& os, const std::vector<std::vector<int>>& V) {$/;"	f
+operator <<	src/util.cpp	/^std::ostream& operator<<(std::ostream& os, const std::vector<std::vector<std::string>>& V) {$/;"	f
+parent	src/0684_redundant_connection.cpp	/^    vector<int> parent;$/;"	m	class:Solution	file:
+parseList	src/tree.cpp	/^TreeNode* TreeNode::parseList(const std::vector<std::string>& V, const size_t i)$/;"	f	class:TreeNode
+parse_bool	src/util.cpp	/^bool parse_bool(std::istream& is)$/;"	f
+parse_matrix	src/util.cpp	/^std::shared_ptr<std::vector<std::vector<int>>> parse_matrix(std::istream& is)$/;"	f
+parse_vector	src/util.cpp	/^std::shared_ptr<std::vector<int>> parse_vector(std::istream& is)$/;"	f
+pattern	src/0010_regex.cpp	/^    std::string pattern;$/;"	m	class:Regex	file:
+permutations	src/0046_permutations.cpp	/^    std::vector<std::vector<T>> permutations;$/;"	m	class:Permutator	file:
+permute_r	src/0046_permutations.cpp	/^    void permute_r(const std::vector<T>& A)$/;"	f	class:Permutator	file:
+print_matrix	src/0036_validate_sudoku.cpp	/^void print_matrix(std::ostream& os, std::vector<std::vector<T>> const& M)$/;"	f
+print_matrix	src/0037_sudoku.cpp	/^void print_matrix(std::ostream& os, std::vector<std::vector<T>> const& M)$/;"	f
+print_matrix	src/0048_rotate_image.cpp	/^void print_matrix(std::ostream& os, const matrix& M)$/;"	f
+print_matrix	src/0079_word_search.cpp	/^void print_matrix(std::ostream& os, std::vector<std::vector<T>> const& M)$/;"	f
+print_matrix	src/util.cpp	/^void print_matrix(std::ostream& os, std::vector<std::vector<T>> const& M)$/;"	f
+push_back	src/list.cpp	/^void ListNode::push_back(int x)$/;"	f	class:ListNode
+put	src/0146_lru_cache.cpp	/^void LRUCache::put(int key, int value)$/;"	f	class:LRUCache
+put	src/0460_lfu_cache.cpp	/^    void put(int key, int value) {$/;"	f	class:LFUCache
+re	src/0010_regex.cpp	/^    Regex re;$/;"	m	class:TestCase	file:
+reduce__r	src/0114_flatten_tree.cpp	/^    TreeNode* reduce__r(TreeNode* n, TreeNode* acc)$/;"	f	class:Solution	file:
+redundant_connection	src/0684_redundant_connection.cpp	/^    vector<int> redundant_connection(vector<vector<int>>& edges)$/;"	f	class:Solution
+removeNode	src/0019_remove_node.cpp	/^    ListNode* removeNode(ListNode* head, const unsigned short i)$/;"	f	class:Solution	file:
+removeNthFromEnd	src/0019_remove_node.cpp	/^    ListNode* removeNthFromEnd(ListNode* head, const unsigned short n)$/;"	f	class:Solution
+reverseKGroup	src/0025_reverse_nodes_in_group.cpp	/^        ListNode* reverseKGroup(ListNode* n, int k)$/;"	f	class:Solution
+right	src/tree.h	/^    TreeNode* right;$/;"	m	struct:TreeNode
+rotate	src/0048_rotate_image.cpp	/^    void rotate(matrix& M) const$/;"	f	class:Solution
+row	src/0037_sudoku.cpp	/^    struct Cell { int row, col; };$/;"	m	struct:Solution::Cell	file:
+run	src/0010_regex.cpp	/^bool TestCase::run()$/;"	f	class:TestCase
+search	src/0033_search_rotated_array.cpp	/^    int search(const std::vector<int>& A, const int x) const$/;"	f	class:Solution
+search	src/0208_trie.cpp	/^bool Trie::search(string word)$/;"	f	class:Trie
+search	src/0676_magic_dictionary.cpp	/^bool MagicDictionary::search(const string& query) const$/;"	f	class:MagicDictionary
+searchMatrix	src/0074_search_matrix.cpp	/^        bool searchMatrix(const std::vector<std::vector<int>>& M, const int x) const$/;"	f	class:Solution
+searchRange	src/0034_range_in_sorted_array.cpp	/^    std::vector<int> searchRange(const std::vector<int> &A, const int x) const$/;"	f	class:Solution
+search_r	src/0079_word_search.cpp	/^    bool search_r(const int i, const int j, const int k)$/;"	f	class:Solution	file:
+shortestPalindrome	src/0214_palindrome.cpp	/^    string shortestPalindrome(string s)$/;"	f	class:Solution
+solution	src/0017_letter_combinations.cpp	/^    vector<string> solution;$/;"	m	class:Solution	file:
+solution	src/0022_generate_parentheses.cpp	/^    vector<string> solution;$/;"	m	class:Solution	file:
+solution	src/0078_subsets.cpp	/^    std::vector<std::vector<int>> solution;$/;"	m	class:Solution	file:
+solution	src/0090_subsets.cpp	/^    std::set<std::vector<int>> solution;$/;"	m	class:Solution	file:
+solutions	src/0039_combination_sum.cpp	/^    std::vector<std::vector<int>> solutions;$/;"	m	class:Solution	file:
+solve	src/0017_letter_combinations.cpp	/^    void solve(const unsigned short i, const string cur)$/;"	f	class:Solution	file:
+solve	src/0022_generate_parentheses.cpp	/^    void solve(const unsigned short opening, const unsigned short closing, const string cur)$/;"	f	class:Solution	file:
+solveSudoku	src/0037_sudoku.cpp	/^    bool solveSudoku(std::vector<std::vector<char>>& board)$/;"	f	class:Solution
+solve__r	src/0037_sudoku.cpp	/^    void solve__r(std::vector<std::vector<char>>& board)$/;"	f	class:Solution	file:
+solve__r	src/0078_subsets.cpp	/^    void solve__r(const std::vector<int>& V, std::vector<int> subset, size_t i)$/;"	f	class:Solution	file:
+solve__r	src/0090_subsets.cpp	/^    void solve__r(const std::vector<int>& V, std::vector<int> subset, size_t i)$/;"	f	class:Solution	file:
+solve_r	src/0039_combination_sum.cpp	/^    void solve_r(const std::vector<int> &V, std::vector<int>::const_iterator it, const int rem)$/;"	f	class:Solution	file:
+solve_recursively	src/0526_beautiful_arrangement.cpp	/^    void solve_recursively(const int i)$/;"	f	class:Solution	file:
+sortColors	src/0075_sort_colors.cpp	/^    void sortColors(std::vector<int>& A) const$/;"	f	class:Solution
 sorted	src/0210_course_schedule_2.cpp	/^    vector<int> sorted;$/;"	m	class:Solution	file:
+startsWith	src/0208_trie.cpp	/^bool Trie::startsWith(string prefix)$/;"	f	class:Trie
 state	src/0207_course_schedule.cpp	/^    vector<dfs_state> state;$/;"	m	class:Solution	file:
 state	src/0210_course_schedule_2.cpp	/^    vector<dfs_state> state;$/;"	m	class:Solution	file:
-string	src/match.cpp	/^    std::string string;$/;"	m	class:Regex	file:
-string	src/match.cpp	/^    std::string string;$/;"	m	class:TestCase	file:
+str	src/0010_regex.cpp	/^    std::string str;$/;"	m	class:Regex	file:
+str	src/0010_regex.cpp	/^    std::string str;$/;"	m	class:TestCase	file:
+subsets	src/0078_subsets.cpp	/^    std::vector<std::vector<int>> subsets(const std::vector<int>& V)$/;"	f	class:Solution
+subsets	src/0090_subsets.cpp	/^    std::vector<std::vector<int>> subsets(const std::vector<int>& V)$/;"	f	class:Solution
+swapPairs	src/0024_swap_nodes.cpp	/^        ListNode* swapPairs(ListNode* l)$/;"	f	class:Solution
+test	src/0036_validate_sudoku.cpp	/^void test(const Sudoku board)$/;"	f
+test	src/0037_sudoku.cpp	/^void test(std::vector<std::vector<char>> board)$/;"	f
+test	src/0039_combination_sum.cpp	/^void test(const std::vector<int> candidates, const int target)$/;"	f
+test	src/0041_first_missing_positive.cpp	/^void test(const std::vector<int> V)$/;"	f
+test	src/0046_permutations.cpp	/^static inline void test(const std::vector<int> nums)$/;"	f	file:
+test	src/0048_rotate_image.cpp	/^void test(matrix M)$/;"	f
+test	src/0049_group_anagrams.cpp	/^void test(const std::vector<std::string> words)$/;"	f
+test	src/0056_merge_intervals.cpp	/^void test(const std::vector<std::vector<int>> intervals)$/;"	f
+test	src/0062_unique_paths.cpp	/^void test(const unsigned m, const unsigned n)$/;"	f
+test	src/0064_minimum_path_sum.cpp	/^void test(const std::vector<std::vector<int>> M)$/;"	f
+test	src/0072_edit_distance.cpp	/^void test(const std::string from, const std::string to)$/;"	f
+test	src/0075_sort_colors.cpp	/^void test(std::vector<int>&& A)$/;"	f
+test	src/0076_minimum_window_substring.cpp	/^void test(const std::string s, const std::string t)$/;"	f
+test	src/0078_subsets.cpp	/^void test(std::vector<int>&& V)$/;"	f
+test	src/0079_word_search.cpp	/^void test(std::vector<std::vector<char>> board, std::string word)$/;"	f
+test	src/0090_subsets.cpp	/^void test(std::vector<int>&& V)$/;"	f
+test	src/0114_flatten_tree.cpp	/^void test(const std::string&& l)$/;"	f
+test	src/0174_dungeon_game.cpp	/^void test(const std::vector<std::vector<int>> dungeon)$/;"	f
+test	src/0501_bst_mode.cpp	/^void test(const std::string&& s)$/;"	f
+three_sum	src/0015_3sum.cpp	/^vector<vector<int>> three_sum(vector<int> nums) \/\/ by value only for testing (literal arrays)$/;"	f
+touch	src/0460_lfu_cache.cpp	/^        void touch() { ++frequency; last_access = clock(); }$/;"	f	struct:LFUCache::FrequencyNode
+touch_frequency_node	src/0460_lfu_cache.cpp	/^    set<FrequencyNode>::iterator touch_frequency_node(const set<FrequencyNode>::iterator it)$/;"	f	class:LFUCache	file:
+two_sum	src/0001_twosum.cpp	/^vector<int> two_sum(vector<int>& nums, int target)$/;"	f
+uniquePaths	src/0062_unique_paths.cpp	/^    unsigned uniquePaths(const unsigned m, const unsigned n)$/;"	f	class:Solution
+used	src/0046_permutations.cpp	/^    std::bitset<k_max_size> used;$/;"	m	class:Permutator	file:
+used	src/0079_word_search.cpp	/^    std::vector<std::vector<bool>> used;$/;"	m	class:Solution	file:
+used	src/0526_beautiful_arrangement.cpp	/^    vector<bool> used;$/;"	m	class:Solution	file:
+val	src/0002_add_two_numbers.cpp	/^    int val;$/;"	m	struct:ListNode	file:
 val	src/0133_clone_graph.cpp	/^        int val;$/;"	m	class:Node	file:
+val	src/list.h	/^    int val;$/;"	m	struct:ListNode
+val	src/tree.h	/^    int val;$/;"	m	struct:TreeNode
+validate__r	src/0098_validate_bst.cpp	/^    bool validate__r(TreeNode* n, int& min, int& max)$/;"	f	class:Solution	file:
+value	src/0146_lru_cache.cpp	/^        int value;$/;"	m	struct:LRUCache::Value	file:
+value	src/0460_lfu_cache.cpp	/^        int value;$/;"	m	struct:LFUCache::Value	file:
+vertex	src/0208_trie.cpp	/^        size_t vertex;$/;"	m	struct:Trie::Edge	file:
+word	src/0079_word_search.cpp	/^    const std::string* word;$/;"	m	class:Solution	file:

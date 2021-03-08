@@ -1,4 +1,4 @@
-CXXFLAGS = -std=c++17 -O2 -Wall -Werror -fsanitize=address -fPIC
+CXXFLAGS = -std=c++17 -O2 -Wall -Werror -fPIC #-fsanitize=address
 
 .PHONY: build clean
 
@@ -28,3 +28,6 @@ mode-bst: build
 
 sort-colors: build
 	$(CXX) $(CXXFLAGS) -o ./build/sort-colors ./src/0075_sort_colors.cpp ./src/util.cpp
+
+flatten-tree: build
+	$(CXX) $(CXXFLAGS) -o ./build/flatten-tree ./src/0114_flatten_tree.cpp ./src/tree.cpp

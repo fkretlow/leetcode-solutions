@@ -30,7 +30,6 @@ TreeNode* TreeNode::parseList(const std::vector<std::string>& V, const size_t i)
     if (i >= V.size()) return nullptr;
     const std::string& vs = V.at(i);
     if (vs == "null" || vs == "nil") return nullptr;
-    int v = std::stoi(vs);
     TreeNode* n = new TreeNode(std::stoi(vs));
     n->left = parseList(V, 2*i + 1);
     n->right = parseList(V, 2*i + 2);
