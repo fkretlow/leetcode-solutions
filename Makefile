@@ -31,3 +31,9 @@ sort-colors: build
 
 flatten-tree: build
 	$(CXX) $(CXXFLAGS) -o ./build/flatten-tree ./src/0114_flatten_tree.cpp ./src/tree.cpp
+
+traverse-tree: build
+	$(CXX) $(CXXFLAGS) -o ./build/traverse-tree ./src/0094_tree_traversal.cpp ./src/tree.cpp ./src/util.cpp
+
+jump-game: build
+	$(CXX) $(CXXFLAGS) -o ./build/jump-game ./src/0055_jump_game.cpp ./src/util.cpp
