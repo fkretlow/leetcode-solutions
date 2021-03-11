@@ -37,3 +37,6 @@ traverse-tree: build
 
 jump-game: build
 	$(CXX) $(CXXFLAGS) -o ./build/jump-game ./src/0055_jump_game.cpp ./src/util.cpp
+
+copy-list-with-randptr: build
+	$(CXX) $(CXXFLAGS) -o ./build/copy-list-with-randptr ./src/0138_copy_list_with_randptr.cpp ./src/util.cpp
