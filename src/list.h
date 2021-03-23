@@ -24,3 +24,4 @@ struct ListNode {
 };
 
 std::ostream& operator<<(std::ostream&, const ListNode*);
+

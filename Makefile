@@ -40,3 +40,9 @@ jump-game: build
 
 copy-list-with-randptr: build
 	$(CXX) $(CXXFLAGS) -o ./build/copy-list-with-randptr ./src/0138_copy_list_with_randptr.cpp ./src/util.cpp
+
+max-subarray: build
+	$(CXX) $(CXXFLAGS) -o ./build/max-subarray ./src/0053_max_subarray.cpp ./src/util.cpp
+
+merge-lists: build
+	$(CXX) $(CXXFLAGS) -o ./build/merge-lists ./src/0021_merge_lists.cpp ./src/list.cpp
