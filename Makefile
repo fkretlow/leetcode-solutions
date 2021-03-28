@@ -46,3 +46,6 @@ max-subarray: build
 
 merge-lists: build
 	$(CXX) $(CXXFLAGS) -o ./build/merge-lists ./src/0021_merge_lists.cpp ./src/list.cpp
+
+words: build
+	$(CXX) $(CXXFLAGS) -o ./build/words ./src/0211_words.cpp
