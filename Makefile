@@ -49,3 +49,6 @@ merge-lists: build
 
 words: build
 	$(CXX) $(CXXFLAGS) -o ./build/words ./src/0211_words.cpp
+
+prefix: build
+	$(CXX) $(CXXFLAGS) -o ./build/prefix ./src/0014_prefix.cpp
