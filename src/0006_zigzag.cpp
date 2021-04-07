@@ -1,3 +1,18 @@
+/*************************************************************************************************
+ *
+ * 6. Zigzag Conversion
+ * The string "PAYPALISHIRING" is written in a zigzag pattern on a given number of rows like this:
+ * (you may want to display this pattern in a fixed font for better legibility)
+ *     P   A   H   N
+ *     A P L S I I G
+ *     Y   I   R
+ * And then read line by line: "PAHNAPLSIIGYIR" Write the code that will take a string and make
+ * this conversion given a number of rows.
+ *
+ * Runtime: 86.91%, memory usage: 49.38%.
+ *
+ ************************************************************************************************/
+
 #include <iostream>
 #include <vector>
 #include <string>
@@ -6,6 +21,7 @@ class Solution {
 public:
     std::string convert(const std::string &s, const int nrows) const
     {
+        if (nrows == 1) return s;
         std::vector<std::string> rows(nrows);
         size_t i = 0;
         for (size_t j = 0; j < s.size(); ++j) {
@@ -34,5 +50,7 @@ int main(void)
 {
     test("PAYPALISHIRING", 3);
     test("PAYPALISHIRING", 4);
+    test("PAYPALISHIRING", 2);
+    test("PAYPALISHIRING", 1);
     return 0;
 }
