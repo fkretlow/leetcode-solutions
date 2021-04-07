@@ -52,3 +52,6 @@ words: build
 
 prefix: build
 	$(CXX) $(CXXFLAGS) -o ./build/prefix ./src/0014_prefix.cpp
+
+zigzag: build
+	$(CXX) $(CXXFLAGS) -o ./build/zigzag ./src/0006_zigzag.cpp
