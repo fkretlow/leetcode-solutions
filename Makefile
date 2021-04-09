@@ -55,3 +55,6 @@ prefix: build
 
 zigzag: build
 	$(CXX) $(CXXFLAGS) -o ./build/zigzag ./src/0006_zigzag.cpp
+
+bipartite: build
+	$(CXX) $(CXXFLAGS) -o ./build/bipartite ./src/0785_bipartite.cpp ./src/util.cpp
