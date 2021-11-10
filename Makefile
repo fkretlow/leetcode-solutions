@@ -58,3 +58,6 @@ zigzag: build
 
 bipartite: build
 	$(CXX) $(CXXFLAGS) -o ./build/bipartite ./src/0785_bipartite.cpp ./src/util.cpp
+
+div: build
+	$(CXX) $(CXXFLAGS) -o ./build/div ./src/0029_integer_division.cpp
